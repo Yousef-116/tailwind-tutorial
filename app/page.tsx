@@ -1,12 +1,16 @@
 import Image from "next/image";
 import React from 'react'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Navebar from "./components/Navebar/Navebar";
+import Hero from "./components/Hero/Hero";
 
 export default function Home() {
   return (
 
-    <div className="">
+    <div className="bg:white dark:bg-gray-900">
       <Navebar />
+      <Hero />
     </div>
 
     // <div className="grid grid-flow-dense grid-cols-6 gap-4 text-center">

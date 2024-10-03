@@ -16,10 +16,10 @@
 }
 
 @layer base {
-  /* html {
-    background-color: green; 
-     font-family: "Montserrat", system-ui;
-  } */
+  html {
+    /* background-color: green;  */
+     /* font-family: "Montserrat", system-ui; */
+  }
 }
 
 /* :root {
