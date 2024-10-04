@@ -54,7 +54,7 @@ const Hero = () => {
     }
     return (
         <div>
-            <div className='w-full container'>
+            <div className='w-full container pb-10'>
                 {/* Hero Section */}
                 <Slider {...settings}>
                     {HeroData.map((data) => (

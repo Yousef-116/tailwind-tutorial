@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Navebar from "./components/Navebar/Navebar";
 import Hero from "./components/Hero/Hero";
+import Category from "./components/Category/Category";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
     <div className="bg:white dark:bg-gray-900">
       <Navebar />
       <Hero />
+      <Category />
     </div>
 
     // <div className="grid grid-flow-dense grid-cols-6 gap-4 text-center">
