@@ -82,16 +82,14 @@ const Hero = () => {
                                     text-4xl text-white 
                                     dark:text-white/10 sm-text[80px]
                                     md:text-[100px] xl:text-[150px]
-                                     z-10'>{data.title2}</h1>
+                                     z-10 py-3'>{data.title2}</h1>
                                     <div><Button
                                         textColor='text-white'
                                         bgColor='bg-primary'
                                         text='Shop Now'
                                         handler={clickBtn} />
                                     </div>
-
                                 </div>
-
                                 {/* img section */}
                                 <div className='order-1  
                                 sm:order-2'><img src={data.image} alt=""

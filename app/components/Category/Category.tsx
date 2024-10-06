@@ -15,7 +15,7 @@ const CategoryData = [
         cols: "",
         btnbgColor: "bg-primary",
         btnTextColor: "text-white",
-        imgPosition:"top-0"
+        imgPosition: "top-0"
 
     },
     {
@@ -25,13 +25,13 @@ const CategoryData = [
         title2: 'Gadget',
         image: 'assets/category/watch.png',
         imageWidth: "w-[320px]",
-        bgColorFrom: "from-[#fdca3d]",
-        bgColorTo: "to-[#fdca3d]/90",
+        bgColorFrom: "from-brandYellow",
+        bgColorTo: "to-brandYellow/85",
         bgColor: "bg-[#fdca3d]",
         cols: "",
         btnbgColor: "bg-white",
         btnTextColor: "text-[#fdca3d]",
-        imgPosition:"top-0"
+        imgPosition: "top-0"
     },
     {
         id: 3,
@@ -46,7 +46,7 @@ const CategoryData = [
         cols: "col-span-2",
         btnbgColor: "bg-white",
         btnTextColor: "text-primary",
-        imgPosition:"top-0"
+        imgPosition: "top-0"
 
     }
     , {
@@ -62,7 +62,7 @@ const CategoryData = [
         cols: "col-span-2",
         btnbgColor: "bg-primary",
         btnTextColor: "text-white",
-        imgPosition:"top-0"
+        imgPosition: "top-0"
 
     },
     {
@@ -70,17 +70,17 @@ const CategoryData = [
         subtitles: "Enjoy",
         title: 'With',
         title2: 'VR',
-        image: 'assets/category/smartwatch2-removebg-preview.png',
-        // image: 'assets/category/vr.png',
+        //image: 'assets/category/smartwatch2-removebg-preview.png',
+        image: 'assets/category/vr.png',
         imageWidth: "w-[300px]",
-        bgColorFrom: "from-green-500",
-        bgColorTo: "to-green-500/90",
+        bgColorFrom: "from-brandGreen",
+        bgColorTo: "to-brandGreen/90",
         bgColor: "green-900",
         cols: "",
         btnbgColor: "bg-white",
         btnTextColor: "text-green-500",
-        imgPosition:"button-0"
-        //imgPosition:"-translate-y-1/2"
+        //imgPosition:"button-0"
+        imgPosition: "sm:-translate-y-1/2 button-0"
     },
     {
         id: 6,
@@ -89,19 +89,16 @@ const CategoryData = [
         title2: 'Gadget',
         image: 'assets/category/speaker.png',
         imageWidth: "w-[300px]",
-        bgColorFrom: "from-blue-500",
-        bgColorTo: "to-blue-500/90",
+        bgColorFrom: "from-brandBlue",
+        bgColorTo: "to-brandBlue/90",
         bgColor: "blue-900",
         cols: "",
         btnbgColor: "bg-white",
         btnTextColor: "text-blue-500",
-        imgPosition:"top-0"
+        imgPosition: "bottom-0 right-0"
 
     }
 ]
-//dark:from-gray-900 dark:to-gray-800
-// from-gray-300/80 
-// to-gray-100  
 const Category = () => {
     function clickBtn() {
         console.log('clicked')
@@ -141,9 +138,10 @@ const Category = () => {
                                     text-xl sm:text-2xl lg:text-3xl'
                             >{data.title}</h1>
                             <h1 className='font-bold uppercase
-                                    text-7xl text-white/20 
-                                    sm-text-7xl
-                                    md:text-2xl xl:text-5xl
+                                    text-4xl text-white/20 
+                                    sm-text-3xl
+                                    md:text-2xl 
+                                    xl:text-5xl
                                      z-10'>{data.title2}</h1>
                             <div><Button
                                 textColor={`${data.btnTextColor}`}
@@ -156,7 +154,7 @@ const Category = () => {
 
                         {/* img section */}
                         <div className='order-1  
-                                sm:order-2'><img src={data.image} alt=""
+                                '><img src={data.image} alt=""
                                 className={`
                                     ${data.imageWidth}
                                    ${data.imgPosition}
