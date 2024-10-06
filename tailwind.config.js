@@ -42,6 +42,15 @@ module.exports = {
 
 
       },
+      dropShadow: {
+        '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
+        '4xl': [
+            '0 35px 35px rgba(0, 0, 0, 0.25)',
+            '-12px 12px 10px rgba(0, 0, 0, 0.4)'
+        ]
+      },
+
+
     },
     plugins: [],
   }

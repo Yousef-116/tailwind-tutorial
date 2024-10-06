@@ -72,7 +72,7 @@ const CategoryData = [
         title2: 'VR',
         //image: 'assets/category/smartwatch2-removebg-preview.png',
         image: 'assets/category/vr.png',
-        imageWidth: "w-[300px]",
+        imageWidth: "w-[310px]",
         bgColorFrom: "from-brandGreen",
         bgColorTo: "to-brandGreen/90",
         bgColor: "green-900",
@@ -106,7 +106,7 @@ const Category = () => {
     return (
 
 
-        <div className='grid grid-cols-2 md:grid-cols-4 container gap-5'>
+        <div className='grid grid-cols-2 lg:grid-cols-4 container gap-5'>
             {CategoryData.map((data) => (
                 <div className={`
                     w-full bg-gradient-to-r 
@@ -160,7 +160,7 @@ const Category = () => {
                                    ${data.imgPosition}
                                    right-0
                                    
-                                drop-shadow-2xl
+                                drop-shadow-md
                                 absolute `} /></div>
                     </div>
                 </div>

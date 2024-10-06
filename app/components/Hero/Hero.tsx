@@ -95,7 +95,7 @@ const Hero = () => {
                                 sm:order-2'><img src={data.image} alt=""
                                         className='w-[300px] sm:w-[450] 
                                 h-[300px] sm:h-[450] sm:scale-105 lg:scale-110
-                                object-contain mx-auto drop-shadow-2xl
+                                object-contain mx-auto drop-shadow-4xl
                                 relative z-50' /></div>
                             </div>
                         </div>
