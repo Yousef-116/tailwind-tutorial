@@ -74,8 +74,10 @@ const Hero = () => {
                                 sm:order-1 relative z-10'>
                                     <h1 className='font-bold 
                                     text-2xl sm:text-6xl lg:text-2xl
+                                    dark:text-white
                                     '>{data.subtitles}</h1>
                                     <h1 className='font-bold 
+                                    dark:text-white
                                     text-5xl sm:text-6xl lg:text-7xl'
                                     >{data.title}</h1>
                                     <h1 className='font-bold uppercase
@@ -94,7 +96,7 @@ const Hero = () => {
                                 <div className='order-1  
                                 sm:order-2'><img src={data.image} alt=""
                                         className='w-[300px] sm:w-[450] 
-                                h-[300px] sm:h-[450] sm:scale-105 lg:scale-110
+                                h-[300px] sm:h-[450] sm:scale-105 lg:scale-150
                                 object-contain mx-auto drop-shadow-4xl
                                 relative z-50' /></div>
                             </div>

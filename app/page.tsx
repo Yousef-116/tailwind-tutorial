@@ -7,6 +7,7 @@ import Hero from "./components/Hero/Hero";
 import Category from "./components/Category/Category";
 import Services from "./components/Services/Services";
 import Banner from "./components/Banner/Banner";
+import Products from "./components/Products/Products";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       <Category />
       <Services />
       <Banner />
-
+      <Products />
     </div>
 
     // <div className="grid grid-flow-dense grid-cols-6 gap-4 text-center">
