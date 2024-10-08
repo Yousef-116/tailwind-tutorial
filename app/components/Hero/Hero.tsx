@@ -2,6 +2,9 @@
 
 import React from 'react'
 import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import Button from '../Shared/Button';
 
 const HeroData = [
@@ -83,7 +86,7 @@ const Hero = () => {
                                     <h1 className='font-bold uppercase
                                     text-4xl text-white 
                                     dark:text-white/10 sm-text[80px]
-                                    md:text-[100px] xl:text-[150px]
+                                    md:text-[90px] xl:text-[150px]
                                      z-10 py-3'>{data.title2}</h1>
                                     <div><Button
                                         textColor='text-white'

@@ -35,7 +35,7 @@ export const Navebar = () => {
                                 '/></span> </a>
                                 <ul className='hidden absolute 
                                 group-hover:flex flex-col p-2
-                                w-48 bg-white shadow-lg rounded-md 
+                                w-60 bg-white shadow-lg rounded-md 
                                 dark:bg-gray-800 dark:text-white
                                 duration-200 z-[9999]
                                 '>

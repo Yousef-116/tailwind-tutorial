@@ -62,7 +62,7 @@ const Products = () => {
     }
 
     return (
-        <div className='container'>
+        <div className='container pb-20'>
             <div className='container text-center w-full pt-24 pb-10'>
                 <h1 className=' font-bold text-3xl dark:text-white'>Our Products</h1>
                 <p className='text-sm text-gray-400 '>Explore Our Products</p>
@@ -73,6 +73,7 @@ const Products = () => {
                     <div key={data.id} className='
                         flex flex-col 
                         items-center 
+                        overflow-hidden
                         '>
                         {/* Card Image */}
                         <div className='relative group'>
@@ -81,21 +82,29 @@ const Products = () => {
                                 group-hover:blur-sm transition-all duration-1000' />
                             {/* Card Button */}
                             <div className='absolute inset-0 flex 
-                            items-center justify-center 
+                            items-center justify-center
+
+                            transform -translate-y-28
+                            group-hover:translate-y-0 
+
                             opacity-0 group-hover:opacity-100 
-                            transition-opacity duration-1000'>
+                            transition-all duration-1000
+
+                            '>
                                 <Button
                                     textColor='text-white'
                                     bgColor='bg-primary'
-                                    text='Shop Now'
+                                    text='Add To Cart'
                                     handler={clickBtn}
                                 />
                             </div>
                         </div>
-                        <h2 className='text-md font-semibold dark:text-white'>
-                            {data.title}</h2>
-                        <p className='text-md font-bold dark:text-white'>
-                            ${data.price}</p>
+                        <div className=''>
+                            <h2 className='text-md font-semibold dark:text-white'>
+                                {data.title}</h2>
+                            <p className='text-md font-bold dark:text-white'>
+                                ${data.price}</p>
+                        </div>
                     </div>
                 ))}
 

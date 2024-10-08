@@ -1,15 +1,37 @@
 import Image from "next/image";
 import React from 'react'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Navebar from "./components/Navebar/Navebar";
 import Hero from "./components/Hero/Hero";
 import Category from "./components/Category/Category";
 import Services from "./components/Services/Services";
 import Banner from "./components/Banner/Banner";
 import Products from "./components/Products/Products";
+import Blogs from "./components/Blogs/Blogs";
 
 export default function Home() {
+  const BannerData = [{
+    frombgColor: "bg-primary",
+    toBgColor: "bg-primary/90",
+    discount: "30% OFF",
+    title: "Fine Smile",
+    date: "10 Jan to 28 Jan",
+    image: "assets/hero/headphone.png",
+    alt: "Fine Smile Banner",
+    btntextColor: "text-primary",
+  },
+  {
+    frombgColor: "bg-brandGreen",
+    toBgColor: "bg-brandGreen/90",
+    discount: "25% OFF",
+    title: "HAPPY HOURS",
+    date: "15 Jan to 31 Jan",
+    image: "assets/category/smartwatch2-removebg-preview.png",
+    alt: "Beats Solo Banner",
+    btntextColor: "text-brandGreen",
+  }
+  ]
+
+
   return (
 
     <div className="bg:white dark:bg-gray-900">
@@ -17,8 +39,11 @@ export default function Home() {
       <Hero />
       <Category />
       <Services />
-      <Banner />
+      <Banner propdata={BannerData[0]} />
       <Products />
+      <Banner propdata={BannerData[1]} />
+      <Blogs />
+
     </div>
 
     // <div className="grid grid-flow-dense grid-cols-6 gap-4 text-center">
