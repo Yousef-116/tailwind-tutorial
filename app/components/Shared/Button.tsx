@@ -11,7 +11,7 @@ type ButtonProps = {
 const Button = ({ text, bgColor, textColor, handler }: ButtonProps) => {
     return (
         <button className={`${textColor} ${bgColor}
-        w-fit mt-5 px-8 py-2 rounded-full text-sm
+        w-fit px-8 py-2 rounded-full text-sm
         hover:scale-105 duration-300 z-10`}>{text}</button>
     )
 }

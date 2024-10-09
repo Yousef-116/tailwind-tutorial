@@ -7,6 +7,8 @@ import Services from "./components/Services/Services";
 import Banner from "./components/Banner/Banner";
 import Products from "./components/Products/Products";
 import Blogs from "./components/Blogs/Blogs";
+import Partners from "./components/Partners/Partners";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   const BannerData = [{
@@ -43,6 +45,8 @@ export default function Home() {
       <Products />
       <Banner propdata={BannerData[1]} />
       <Blogs />
+      <Partners />
+      <Footer />
 
     </div>
 
