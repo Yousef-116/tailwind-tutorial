@@ -4,10 +4,10 @@ import { CiShoppingCart } from "react-icons/ci";
 import { FaAngleDown } from "react-icons/fa";
 import DarkMode from './DarkMode';
 
-export const Navebar = () => {
+export const Navebar = ({ openForm }: { openForm: any }) => {
     return (
         <div className='bg-white dark:bg-gray-900
-         dark:text-white duration-200 relative z-40'>
+         dark:text-white duration-200 z-40 fixed w-full'>
             <div className='py-5'>
                 <div className="container flex
                 justify-between items-center">
@@ -62,7 +62,7 @@ export const Navebar = () => {
                         </div>
 
                         <div className='relative mt-1'>
-                            <button>
+                            <button onClick={openForm}>
                                 <CiShoppingCart className='cursor-pointer
                                  text-2xl text-gray-600 dark:text-gray-300
                                  hover:text-primary ' />

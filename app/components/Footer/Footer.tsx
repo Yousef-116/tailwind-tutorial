@@ -25,7 +25,7 @@ const Footer = () => {
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores alias cum
                     </p>
                     <p>
-                        Made with 💖 by The Coding Journey
+                        Made with 💖 by The Yousef Mostafa
                     </p>
                     <Button
                         textColor='text-white'
@@ -68,17 +68,17 @@ const Footer = () => {
                 </div>
 
                 {/* col 4 */}
-                <div className='flex flex-col gap-3'>
+                <div className='flex flex-col sm:col-span-1 col-span-2  gap-3'>
                     <h3 className='font-extrabold text-lg dark:text-white'>
                         Address</h3>
                     <div className='flex items-center w-full gap-2 text-white'>
                         <IoIosSend className='w-1/3 max-h-4 max-w-4 ' />
-                        <p>Noida , Uttar Pradesh</p>
+                        <p>Egypt , Elqalupia-Elkhanka</p>
                     </div>
 
                     <div className='flex items-center w-full gap-2 text-white'>
                         <CiMobile1 className='w-1/3 max-h-4 max-w-4 ' />
-                        <p>+91 1234567890</p>
+                        <p>+02 1153610783</p>
                     </div>
 
                     <div className='flex  gap-4'>

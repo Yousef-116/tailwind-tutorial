@@ -1,5 +1,6 @@
-import Image from "next/image";
-import React from 'react'
+"use client";
+
+import React, { useState } from 'react'
 import Navebar from "./components/Navebar/Navebar";
 import Hero from "./components/Hero/Hero";
 import Category from "./components/Category/Category";
@@ -9,6 +10,8 @@ import Products from "./components/Products/Products";
 import Blogs from "./components/Blogs/Blogs";
 import Partners from "./components/Partners/Partners";
 import Footer from "./components/Footer/Footer";
+import Popup from "./components/Popup/Popup";
+
 
 export default function Home() {
   const BannerData = [{
@@ -33,11 +36,18 @@ export default function Home() {
   }
   ]
 
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+  const togglePopup = () => {
+    setIsPopupVisible(!isPopupVisible);
+  };
+
+
 
   return (
 
     <div className="bg:white dark:bg-gray-900">
-      <Navebar />
+      <Navebar openForm={togglePopup} />
       <Hero />
       <Category />
       <Services />
@@ -47,6 +57,11 @@ export default function Home() {
       <Blogs />
       <Partners />
       <Footer />
+      <Popup
+        isVisible={isPopupVisible}
+        message="This is your popup message!"
+        onClose={togglePopup}
+      />
 
     </div>
 
