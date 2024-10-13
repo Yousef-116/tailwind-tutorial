@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Navebar from "./components/Navebar/Navebar";
 import Hero from "./components/Hero/Hero";
 import Category from "./components/Category/Category";
@@ -11,6 +11,8 @@ import Blogs from "./components/Blogs/Blogs";
 import Partners from "./components/Partners/Partners";
 import Footer from "./components/Footer/Footer";
 import Popup from "./components/Popup/Popup";
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 
 export default function Home() {
@@ -43,6 +45,16 @@ export default function Home() {
   };
 
 
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+      easing: 'ease-in-sine',
+      delay: 100,
+      offset: 100,
+    });
+    AOS.refresh();
+
+  },[])
 
   return (
 

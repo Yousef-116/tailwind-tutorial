@@ -1,58 +1,45 @@
+"use client";
 import React from 'react'
 import Button from '../Shared/Button'
 
 const Banner = ({ propdata }: { propdata: any }) => {
-
     function clickBtn() {
         console.log('clicked')
     }
+
     return (
-        <div className='container'>
+        <div className='container mx-auto'>
             <div className={`rounded-3xl bg-gradient-to-r 
-                    ${propdata.fromBgColor}
-                    ${propdata.toBgColor}
-                     p-8
-                     md:h-[340px] 
-                     w-full 
-                     grid md:grid-cols-4 
-                     items-center 
-                     relative
-                     `}>
+                ${propdata.fromBgColor} ${propdata.toBgColor} 
+                p-8 w-full grid md:grid-cols-4 
+                items-center `} >
                 {/* discount Section */}
-                <div className='items-center
-                         text-white  '>
-                    <p className='text-sm font-medium'>{propdata.discount}</p>
-                    <h1 className='text-4xl font-bold'>{propdata.title}</h1>
-                    <p className='text-sm font-medium'>{propdata.date}</p>
+                <div className='items-center text-white'>
+                    <p data-aos="slide-right"
+                        className='text-sm font-medium'>{propdata.discount}</p>
+                    <h1 data-aos="zoom-out"
+                        className='text-4xl font-bold'>{propdata.title}</h1>
+                    <p data-aos="fade-up"
+                        className='text-sm font-medium'>{propdata.date}</p>
                 </div>
-
                 {/* Image Section */}
-                <div className='col-span-2 mx-auto'>
-                    {/* <img src='https://via.placeholder.com/400x300' alt='Smile' /> */}
-                    <img src={`${propdata.image}`}
-                        className='drop-shadow-4xl 
-                        h-[320px] w-[320px] md:h-[270px] md:w-[270px] 
-                        lg:h-[450px] lg:w-[450px] md:absolute
-                        md:transform md:-translate-x-1/2 md:-translate-y-1/2'
-                        alt='' />
-
+                <div data-aos="zoom-out" className="col-span-2 h-full flex items-center ">
+                    <img src={`${propdata.image}`} className='drop-shadow-4xl 
+                    h-[250px] w-[250px] md:h-[300px] md:w-[300px] lg:scale-150 object-cover mx-auto
+                    ' alt='' />
                 </div>
-
-
-                {/* Discreption Section */}
+                {/* Description Section */}
                 <div className='gap-4 grid'>
-                    <h1 className='text-xl text-white font-bold'>Air Solo Bass</h1>
-                    <h2 className='text-3xl md:text-5xl text-white font-bold'>Winter Sale</h2>
-                    <p className='text-sm text-white font-medium'>Smile experience with our Fine Smile headphones.</p>
-                    <Button
-                        textColor={`${propdata.btntextColor}`}
-                        bgColor={`bg-white`}
-                        text='Shop Now'
-                        handler={clickBtn}
-                    />
+                    <h1 data-aos="zoom-out"
+                        className='text-xl text-white font-bold'>Air Solo Bass</h1>
+                    <h2 data-aos="fade-up"
+                        className='text-3xl md:text-5xl text-white font-bold'>Winter Sale</h2>
+                    <p data-aos="zoom-up"
+                        className='text-sm text-white font-medium'>Smile experience with our Fine Smile headphones.</p>
+                    <div data-aos="fade-up" data-aos-offset='0'>
+                        <Button textColor={`${propdata.btntextColor}`} bgColor={`bg-white`} text='Shop Now' handler={clickBtn} />
+                    </div>
                 </div>
-
-
             </div>
         </div>
     )
