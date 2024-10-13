@@ -5,7 +5,7 @@ const Blogs = () => {
         {
             id: 1,
             title: 'How to choose perfect smartwatch',
-
+            delay: 200,
             image: '/assets/blogs/blog-1.jpg',
             date: '12 May, 2022 by John Doe',
             author: ' by John Doe',
@@ -14,6 +14,7 @@ const Blogs = () => {
         {
             id: 2,
             title: 'How to choose perfect gadget',
+            delay: 300,
             image: '/assets/blogs/blog-2.jpg',
             date: '25 May, 2022 by Jane Doe',
             author: ' by Jane Doe',
@@ -22,6 +23,7 @@ const Blogs = () => {
         {
             id: 3,
             title: 'How to choose perfect VR headset',
+            delay: 400,
             image: '/assets/blogs/blog-3.jpg',
             date: '30 May, 2022 by Michael Doe',
             author: ' by Michael Doe',
@@ -41,7 +43,11 @@ const Blogs = () => {
             <div className='grid grid-cols-1 sm:grid-cols-2 
             md:grid-cols-3 gap-7'>
                 {blogsData.map((blog) => (
-                    <div key={blog.id} className='
+                    <div
+                        data-aos="fade-up"
+                        data-aos-delay={blog.delay}
+                        data-aos-duration="700"
+                        key={blog.id} className='
                         flex flex-col 
                         
                         overflow-hidden

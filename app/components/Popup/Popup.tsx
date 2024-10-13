@@ -16,7 +16,8 @@ const Popup = ({ message, isVisible, onClose }: { message: any, isVisible: any, 
             onClick={onClose}
         >
             <div
-                className='bg-white rounded-lg p-6 
+                className='bg-white rounded-xl p-6
+                dark:bg-gray-900
                 relative shadow-lg max-w-sm w-full'
                 onClick={e => e.stopPropagation()}
             >
@@ -27,16 +28,19 @@ const Popup = ({ message, isVisible, onClose }: { message: any, isVisible: any, 
                 >
                     <IoIosClose className='w-7 h-7' />
                 </button>
-                <p className=''>Order Now</p>
+                <p className='dark:text-white'>Order Now</p>
 
                 <input className='border-2 rounded-full 
-                py-1 px-2 w-full mt-4 '
+                py-1 px-2 w-full mt-4 dark:bg-gray-800
+                 dark:border-gray-600'
                     type="text" placeholder='Name' />
                 <input className='border-2 rounded-full 
-                py-1 px-2 w-full mt-4'
+                py-1 px-2 w-full mt-4 dark:bg-gray-800
+                 dark:border-gray-600'
                     type="text" placeholder='Email' />
                 <input className='border-2 rounded-full 
-                py-1 px-2 w-full mt-4'
+                py-1 px-2 w-full mt-4 dark:bg-gray-800
+                 dark:border-gray-600'
                     type="text" placeholder='Address' />
                 <div className='mt-4 text-center'><Button
                     textColor={`text-white`}
