@@ -4,10 +4,16 @@ import React from 'react';
 import { IoIosClose } from "react-icons/io";
 import Button from '../Shared/Button';
 
-const Popup = ({ message, isVisible, onClose }: { message: any, isVisible: any, onClose: any }) => {
+interface PopupProps {
+    isVisible: boolean;
+    onClose: () => void;
+}
+
+const Popup: React.FC<PopupProps> = ({ isVisible, onClose }) => {
     if (!isVisible) return null;
+
     function clickBtn() {
-        console.log('clicked')
+        console.log('clicked');
     }
     return (
         <div

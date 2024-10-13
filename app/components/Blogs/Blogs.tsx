@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const Blogs = () => {
     const blogsData = [
@@ -54,7 +55,7 @@ const Blogs = () => {
                         relative 
                         '>
                         <div className='overflow-clip rounded-xl'>
-                            <img className='w-full h-56 object-cover 
+                            <Image width={2000} height={2000} className='w-full h-56 object-cover 
                             transition-all duration-500
                             hover:scale-105 overflow-clip'
                                 src={blog.image} alt={blog.title} />

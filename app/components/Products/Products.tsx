@@ -1,61 +1,62 @@
 import React from 'react'
 import Button from '../Shared/Button'
+import Image from 'next/image'
 
 
 const ProductsData = [
     {
         id: 1,
         title: 'Product 1',
-        image: 'assets/product/p-1.jpg',
+        image: '/assets/product/p-1.jpg',
         price: 100,
         delay: 200
     },
     {
         id: 2,
         title: 'Product 2',
-        image: 'assets/product/p-2.jpg',
+        image: '/assets/product/p-2.jpg',
         price: 150,
         delay: 300
     },
     {
         id: 3,
         title: 'Product 3',
-        image: 'assets/product/p-3.jpg',
+        image: '/assets/product/p-3.jpg',
         price: 200,
         delay: 400
     },
     {
         id: 4,
         title: 'Product 4',
-        image: 'assets/product/p-4.jpg',
+        image: '/assets/product/p-4.jpg',
         price: 250,
         delay: 500
     },
     {
         id: 5,
         title: 'Product 5',
-        image: 'assets/product/p-5.jpg',
+        image: '/assets/product/p-5.jpg',
         price: 300,
         delay: 200
     },
     {
         id: 6,
         title: 'Product 6',
-        image: 'assets/product/p-7.jpg',
+        image: '/assets/product/p-7.jpg',
         price: 350,
         delay: 300
     },
     {
         id: 7,
         title: 'Product 7',
-        image: 'assets/product/p-9.jpg',
+        image: '/assets/product/p-9.jpg',
         price: 400,
         delay: 400
     },
     {
         id: 8,
         title: 'Product 8',
-        image: 'assets/product/p-5.jpg',
+        image: '/assets/product/p-5.jpg',
         price: 500,
         delay: 500
     }
@@ -89,7 +90,7 @@ const Products = () => {
                         '>
                         {/* Card Image */}
                         <div className='relative group'>
-                            <img src={data.image} alt={data.title}
+                            <Image width={200} height={200} src={data.image} alt={data.title}
                                 className='object-cover h-[200px] rounded-xl 
                                 group-hover:blur-sm transition-all duration-1000' />
                             {/* Card Button */}

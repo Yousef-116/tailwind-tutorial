@@ -4,13 +4,13 @@ type ButtonProps = {
     text: string,
     bgColor: string,
     textColor: string,
-    handler: Function,
+    handler: () => void;
 
 }
 
-const Button = ({ text, bgColor, textColor, handler }: ButtonProps) => {
+const Button: React.FC<ButtonProps> = ({ text, bgColor, textColor, handler }) => {
     return (
-        <button className={`${textColor} ${bgColor}
+        <button onClick={handler} className={`${textColor} ${bgColor}
         w-fit px-8 py-2 rounded-full text-sm
         hover:scale-105 duration-300 z-10`}>{text}</button>
     )

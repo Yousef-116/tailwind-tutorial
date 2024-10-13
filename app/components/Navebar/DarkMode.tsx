@@ -36,11 +36,11 @@ const DarkMode = () => {
 
     return (
         <div>
-            <img
+            <Image
                 src={theme}
                 onClick={toggleTheme}
-                width={30}
-                height={100}
+                width={1000}
+                height={1000}
                 className={`w-12 cursor-pointer transition-all duration-300 ease-in-out ${isFading ? 'opacity-0' : 'opacity-100'}`}
                 alt="Theme Toggle"
             />

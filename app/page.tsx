@@ -68,7 +68,6 @@ export default function Home() {
       <Footer />
       <Popup
         isVisible={isPopupVisible}
-        message="This is your popup message!"
         onClose={togglePopup}
       />
     </div>
