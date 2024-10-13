@@ -1,8 +1,21 @@
 "use client";
 import React from 'react'
 import Button from '../Shared/Button'
+import Image from 'next/image'
 
-const Banner = ({ propdata }: { propdata: any }) => {
+
+interface BannerData {
+    fromBgColor: string;
+    toBgColor: string;
+    discount: string;
+    title: string;
+    date: string;
+    image: string;
+    alt: string;
+    btntextColor: string;
+}
+
+const Banner = ({ propdata }: { propdata: BannerData }) => {
     function clickBtn() {
         console.log('clicked')
     }
@@ -24,7 +37,7 @@ const Banner = ({ propdata }: { propdata: any }) => {
                 </div>
                 {/* Image Section */}
                 <div data-aos="zoom-out" className="col-span-2 h-full flex items-center ">
-                    <img src={`${propdata.image}`} className='drop-shadow-4xl 
+                    <Image width={250} height={250} src={`${propdata.image}`} className='drop-shadow-4xl 
                     h-[250px] w-[250px] md:h-[300px] md:w-[300px] lg:scale-150 object-cover mx-auto
                     ' alt='' />
                 </div>

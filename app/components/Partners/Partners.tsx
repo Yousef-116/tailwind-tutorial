@@ -3,10 +3,10 @@ import React from 'react'
 const Partners = () => {
     return (
         <div
-            data-aos="zoom-out"
-            className='hidden md:flex mb-12 h-28 bg-gray-200
+
+            className='hidden md:flex mb-12 h-28 bg-gray-200 w-full
         dark:bg-white/10'>
-            <div className='container grid grid-cols-5
+            <div data-aos="zoom-out" className='container grid grid-cols-5
             items-center justify-center h-full opacity-50'>
                 <div
                     data-aos="fade-down-right"
