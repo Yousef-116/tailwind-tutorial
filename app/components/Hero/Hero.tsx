@@ -4,7 +4,7 @@ import React from 'react'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Image from 'next/image';
 import Button from '../Shared/Button';
 
 const HeroData = [
@@ -13,7 +13,7 @@ const HeroData = [
         subtitles: "Beats Solo",
         title: 'Wireless',
         title2: 'HEADPHONE',
-        image: "assets/hero/headphone.png",
+        image: "/assets/hero/headphone.png",
         description: 'This is the first slide',
     },
     {
@@ -21,7 +21,7 @@ const HeroData = [
         subtitles: "Beats Solo",
         title: 'Wireless',
         title2: 'virtual',
-        image: 'assets/category/vr.png',
+        image: '/assets/category/vr.png',
         description: 'This is the second slide',
     },
     {
@@ -29,7 +29,7 @@ const HeroData = [
         subtitles: "Beats Solo",
         title: 'Lenovo',
         title2: 'Laptops',
-        image: 'assets/category/macbook.png',
+        image: '/assets/category/macbook.png',
         description: 'This is the third slide',
     }
 ]
@@ -38,20 +38,18 @@ const HeroData = [
 
 const Hero = () => {
 
-    var settings = {
+    const settings = {
         dots: false,
         arrows: false,
         infinite: true,
         speed: 800,
-        //slidesToShow: 1,
-
         slidesToScroll: 1,
-
         autoplaySpeed: 4000,
         cssEase: "ease-in-out",
         pauseOnHover: false,
         pauseOnFocus: true,
     };
+
     function clickBtn() {
         console.log('clicked')
     }
@@ -99,12 +97,13 @@ const Hero = () => {
                                     dark:text-white/10 sm-text[80px]
                                     md:text-[90px] xl:text-[150px]
                                      z-10 py-3'>{data.title2}</h1>
-                                    <div data-aos="zoom-out"><Button
+                                    <div data-aos="zoom-out" className='my-5'>
+                                        <Button
 
-                                        textColor='text-white'
-                                        bgColor='bg-primary'
-                                        text='Shop Now'
-                                        handler={clickBtn} />
+                                            textColor='text-white'
+                                            bgColor='bg-primary'
+                                            text='Shop Now'
+                                            handler={clickBtn} />
                                     </div>
                                 </div>
                                 {/* img section */}
@@ -112,11 +111,18 @@ const Hero = () => {
                                     data-aos="fade-left"
                                     data-aos-delay="500"
                                     className='order-1  z-40
-                                sm:order-2'><img src={data.image} alt=""
-                                        className='w-[300px] sm:w-[450] 
-                                h-[300px] sm:h-[450] sm:scale-105 lg:scale-150
-                                object-contain mx-auto drop-shadow-4xl
-                                relative z-40' /></div>
+                                sm:order-2'>
+                                    <Image
+                                        src={data.image}
+                                        alt="Product Image"
+                                        width={300}
+                                        height={300}
+                                        className='w-[300px] sm:w-[450px] h-[300px] 
+                                        sm:h-[450px] sm:scale-105 lg:scale-110
+                                         object-contain mx-auto 
+                                         drop-shadow-4xl relative z-40'
+                                    />
+                                </div>
                             </div>
                         </div>
                     ))}

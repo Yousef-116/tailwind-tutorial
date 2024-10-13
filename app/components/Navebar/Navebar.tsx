@@ -7,7 +7,7 @@ import DarkMode from './DarkMode';
 export const Navebar = ({ openForm }: { openForm: any }) => {
     return (
         <div className='bg-white dark:bg-gray-900
-         dark:text-white duration-200 z-40 fixed w-full'>
+         dark:text-white duration-200 z-40 w-full'>
             <div className='py-5'>
                 <div className="container flex
                 justify-between items-center">

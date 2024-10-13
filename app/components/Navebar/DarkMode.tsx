@@ -1,53 +1,51 @@
 "use client";
-
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const DarkMode = () => {
-    const light_img = "assets/website/light-mode-button.png";
-    const dark_img = "assets/website/dark-mode-button.png";
+    const light_img = "/assets/website/light-mode-button.png"; // Ensure this path is correct
+    const dark_img = "/assets/website/dark-mode-button.png";   // Ensure this path is correct
 
     const [theme, setTheme] = useState<string>(
-        localStorage.getItem("theme") ?? light_img
+        typeof window !== 'undefined' && localStorage.getItem("theme")
+            ? localStorage.getItem("theme") ?? light_img
+            : light_img
     );
+
     const [isFading, setIsFading] = useState(false);
+    const ele = typeof document !== 'undefined' ? document.documentElement : null;
 
-    const ele = document.documentElement;
-
-    React.useEffect(() => {
-        localStorage.setItem("theme", theme); // Save the theme in local storage
-        if (theme === dark_img) {
-            ele.classList.add("dark")
+    useEffect(() => {
+        if (theme && ele) {
+            localStorage.setItem("theme", theme);
+            if (theme === dark_img) {
+                ele.classList.add("dark");
+            } else {
+                ele.classList.remove("dark");
+            }
         }
-        else { ele.classList.remove("dark") }
-
-
-    })
-
+    }, [theme, ele, dark_img]);
 
     const toggleTheme = () => {
-        setIsFading(true); // Trigger fade out
+        setIsFading(true);
         setTimeout(() => {
-            setTheme(theme === light_img ? dark_img : light_img); // Switch the image
-            setIsFading(false); // Trigger fade in
-        }, 100); // The duration should match the fade-out transition duration
+            setTheme(prevTheme => prevTheme === light_img ? dark_img : light_img);
+            setIsFading(false);
+        }, 100);
     };
 
     return (
         <div>
-
             <img
                 src={theme}
                 onClick={toggleTheme}
-                className={`
-                        w-12 cursor-pointer 
-                        transition-all duration-300 ease-in-out
-                        ${isFading ? 'opacity-0' : 'opacity-100'}
-                    `}
+                width={30}
+                height={100}
+                className={`w-12 cursor-pointer transition-all duration-300 ease-in-out ${isFading ? 'opacity-0' : 'opacity-100'}`}
                 alt="Theme Toggle"
             />
-
         </div>
     );
-}
+};
 
 export default DarkMode;

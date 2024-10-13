@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '../Shared/Button'
-
+import Image from 'next/image'
 
 const CategoryData = [
     {
@@ -10,6 +10,7 @@ const CategoryData = [
         title2: 'Earphone',
         image: "/assets/category/earphone.png",
         imageWidth: "w-[320px]",
+        ImageWidth: 320,
         bgColorFrom: "from-black/90",
         bgColorTo: "to-black/70",
         cols: "",
@@ -23,8 +24,9 @@ const CategoryData = [
         subtitles: "Enjoy",
         title: 'With',
         title2: 'Gadget',
-        image: 'assets/category/watch.png',
+        image: '/assets/category/watch.png',
         imageWidth: "w-[320px]",
+        ImageWidth: 320,
         bgColorFrom: "from-brandYellow",
         bgColorTo: "to-brandYellow/85",
         bgColor: "bg-[#fdca3d]",
@@ -38,8 +40,9 @@ const CategoryData = [
         subtitles: "Enjoy",
         title: 'With',
         title2: 'Laptop',
-        image: 'assets/category/macbook.png',
+        image: '/assets/category/macbook.png',
         imageWidth: "w-[350px]",
+        ImageWidth: 350,
         bgColorFrom: "from-primary",
         bgColorTo: "to-primary/80",
         bgColor: "primary",
@@ -54,8 +57,9 @@ const CategoryData = [
         subtitles: "Enjoy",
         title: 'With',
         title2: 'PS4',
-        image: "assets/category/gaming.png",
+        image: "/assets/category/gaming.png",
         imageWidth: "w-[320px]",
+        ImageWidth: 320,
         bgColorFrom: "from-gray-400",
         bgColorTo: "to-gray-100",
         bgColor: "gray-300/80",
@@ -71,8 +75,9 @@ const CategoryData = [
         title: 'With',
         title2: 'VR',
         //image: 'assets/category/smartwatch2-removebg-preview.png',
-        image: 'assets/category/vr.png',
+        image: '/assets/category/vr.png',
         imageWidth: "w-[310px]",
+        ImageWidth: 310,
         bgColorFrom: "from-brandGreen",
         bgColorTo: "to-brandGreen/90",
         bgColor: "green-900",
@@ -87,8 +92,9 @@ const CategoryData = [
         subtitles: "Enjoy",
         title: 'With',
         title2: 'Gadget',
-        image: 'assets/category/speaker.png',
+        image: '/assets/category/speaker.png',
         imageWidth: "w-[300px]",
+        ImageWidth: 300,
         bgColorFrom: "from-brandBlue",
         bgColorTo: "to-brandBlue/90",
         bgColor: "blue-900",
@@ -154,9 +160,8 @@ const Category = () => {
 
                         {/* img section */}
                         <div className='order-1  
-                                '><img src={data.image} alt=""
+                                '><Image width={data.ImageWidth} height={400} src={data.image} alt=""
                                 className={`
-                                    ${data.imageWidth}
                                    ${data.imgPosition}
                                    right-0
                                    
