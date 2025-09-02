@@ -21,7 +21,7 @@ const BannerData = [
     discount: "30% OFF",
     title: "Fine Smile",
     date: "10 Jan to 28 Jan",
-    image: "/assets/hero/headphone.png",
+    image: "./assets/hero/headphone.png",
     alt: "Fine Smile Banner",
     btntextColor: "text-primary",
   },
@@ -31,7 +31,7 @@ const BannerData = [
     discount: "25% OFF",
     title: "HAPPY HOURS",
     date: "15 Jan to 31 Jan",
-    image: "/assets/category/smartwatch2-removebg-preview.png",
+    image: "./assets/category/smartwatch2-removebg-preview.png",
     alt: "Beats Solo Banner",
     btntextColor: "text-brandGreen",
   }
