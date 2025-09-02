@@ -3,8 +3,8 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const DarkMode = () => {
-    const light_img = "/assets/website/light-mode-button.png"; // Ensure this path is correct
-    const dark_img = "/assets/website/dark-mode-button.png";   // Ensure this path is correct
+    const light_img = "./assets/website/light-mode-button.png"; // Ensure this path is correct
+    const dark_img = "./assets/website/dark-mode-button.png";   // Ensure this path is correct
 
     const [theme, setTheme] = useState<string>(
         typeof window !== 'undefined' && localStorage.getItem("theme")

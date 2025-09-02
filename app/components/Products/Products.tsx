@@ -7,56 +7,56 @@ const ProductsData = [
     {
         id: 1,
         title: 'Product 1',
-        image: '/assets/product/p-1.jpg',
+        image: './asset/product/p-1.jpg',
         price: 100,
         delay: 200
     },
     {
         id: 2,
         title: 'Product 2',
-        image: '/assets/product/p-2.jpg',
+        image: './asset/product/p-2.jpg',
         price: 150,
         delay: 300
     },
     {
         id: 3,
         title: 'Product 3',
-        image: '/assets/product/p-3.jpg',
+        image: './asset/product/p-3.jpg',
         price: 200,
         delay: 400
     },
     {
         id: 4,
         title: 'Product 4',
-        image: '/assets/product/p-4.jpg',
+        image: './asset/product/p-4.jpg',
         price: 250,
         delay: 500
     },
     {
         id: 5,
         title: 'Product 5',
-        image: '/assets/product/p-5.jpg',
+        image: './asset/product/p-5.jpg',
         price: 300,
         delay: 200
     },
     {
         id: 6,
         title: 'Product 6',
-        image: '/assets/product/p-7.jpg',
+        image: './asset/product/p-7.jpg',
         price: 350,
         delay: 300
     },
     {
         id: 7,
         title: 'Product 7',
-        image: '/assets/product/p-9.jpg',
+        image: './asset/product/p-9.jpg',
         price: 400,
         delay: 400
     },
     {
         id: 8,
         title: 'Product 8',
-        image: '/assets/product/p-5.jpg',
+        image: './asset/product/p-5.jpg',
         price: 500,
         delay: 500
     }
