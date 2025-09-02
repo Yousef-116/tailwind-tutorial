@@ -13,7 +13,7 @@ const HeroData = [
         subtitles: "Beats Solo",
         title: 'Wireless',
         title2: 'HEADPHONE',
-        image: "/assets/hero/headphone.png",
+        image: "./assets/hero/headphone.png",
         description: 'This is the first slide',
     },
     {
@@ -21,7 +21,7 @@ const HeroData = [
         subtitles: "Beats Solo",
         title: 'Wireless',
         title2: 'virtual',
-        image: '/assets/category/vr.png',
+        image: './assets/category/vr.png',
         description: 'This is the second slide',
     },
     {
@@ -29,7 +29,7 @@ const HeroData = [
         subtitles: "Beats Solo",
         title: 'Lenovo',
         title2: 'Laptops',
-        image: '/assets/category/macbook.png',
+        image: './assets/category/macbook.png',
         description: 'This is the third slide',
     }
 ]
