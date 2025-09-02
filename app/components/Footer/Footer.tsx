@@ -12,7 +12,7 @@ const Footer = () => {
         console.log('clicked')
     }
     return (
-        <div className='container pb-36'>
+        <div className='container pb-36 mt-20'>
             <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10' >
                 {/* col 1 */}
                 <div className='col-span-2 sm:col-span-3 md:col-span-2 grid gap-4 text-gray-600'>
@@ -25,7 +25,7 @@ const Footer = () => {
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores alias cum
                     </p>
                     <p>
-                        Made with 💖 by The Yousef Mostafa
+                        Made with 💖 by The Yousef Mostafa mohamed
                     </p>
                     <Button
                         textColor='text-white'

@@ -6,10 +6,10 @@ import Category from "./components/Category/Category";
 import Services from "./components/Services/Services";
 import Banner from "./components/Banner/Banner";
 import Products from "./components/Products/Products";
-import Blogs from "./components/Blogs/Blogs";
-import Partners from "./components/Partners/Partners";
+// import Blogs from "./components/Blogs/Blogs";
+// import Partners from "./components/Partners/Partners";
 import Footer from "./components/Footer/Footer";
-import Popup from "./components/Popup/Popup";
+//import Popup from "./components/Popup/Popup";
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import Navebar from './components/Navebar/Navebar';
@@ -55,7 +55,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="bg:white dark:bg-gray-900">
+    <div className="bg:white dark:bg-gray-900 w-full relative">
       <Navebar openForm={togglePopup} />
       <Hero />
       <Category />
@@ -63,13 +63,13 @@ export default function Home() {
       <Banner propdata={BannerData[0]} />
       <Products />
       <Banner propdata={BannerData[1]} />
-      <Blogs />
-      <Partners />
+      {/* <Blogs /> */}
+      {/* <Partners /> */}
       <Footer />
-      <Popup
+      {/* <Popup
         isVisible={isPopupVisible}
         onClose={togglePopup}
-      />
+      /> */}
     </div>
   );
 }
