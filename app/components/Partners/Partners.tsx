@@ -16,7 +16,7 @@ const Partners = () => {
                     data-aos-delay="400"
                     className=''>
                     <Image width={1000} height={1000} className='w-20 mx-auto dark:invert'
-                        src="/assets/brand/br-1.png" alt="" />
+                        src="./assets/brand/br-1.png" alt="" />
                 </div>
                 <div
                     data-aos="fade-left"
@@ -24,14 +24,14 @@ const Partners = () => {
                     data-aos-delay="400"
                     className=''>
                     <Image width={1000} height={1000} className='w-20 mx-auto dark:invert'
-                        src="/assets/brand/br-2.png" alt="" />
+                        src="./assets/brand/br-2.png" alt="" />
                 </div>
                 <div
                     data-aos="zoom-out"
                     data-aos-delay="400"
                     className=''>
                     <Image width={1000} height={1000} className='w-20 mx-auto dark:invert'
-                        src="/assets/brand/br-3.png" alt="" />
+                        src="./assets/brand/br-3.png" alt="" />
                 </div>
                 <div
                     data-aos="fade-right"
@@ -39,7 +39,7 @@ const Partners = () => {
                     data-aos-delay="400"
                     className=''>
                     <Image width={1000} height={1000} className='w-20 mx-auto dark:invert'
-                        src="/assets/brand/br-4.png" alt="" />
+                        src="./assets/brand/br-4.png" alt="" />
                 </div>
                 <div
                     data-aos="fade-down-right"
@@ -47,7 +47,7 @@ const Partners = () => {
                     data-aos-delay="400"
                     className=''>
                     <Image width={1000} height={1000} className='w-20 mx-auto dark:invert'
-                        src="/assets/brand/br-5.png" alt="" />
+                        src="./assets/brand/br-5.png" alt="" />
                 </div>
             </div>
         </div>

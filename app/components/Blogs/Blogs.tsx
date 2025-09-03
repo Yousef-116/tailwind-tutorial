@@ -7,7 +7,7 @@ const Blogs = () => {
             id: 1,
             title: 'How to choose perfect smartwatch',
             delay: 200,
-            image: '/assets/blogs/blog-1.jpg',
+            image: './assets/blogs/blog-1.jpg',
             date: '12 May, 2022 by John Doe',
             author: ' by John Doe',
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel libero id velit consectetur, vel finibus mauris. Nulla facilisi.'
@@ -16,7 +16,7 @@ const Blogs = () => {
             id: 2,
             title: 'How to choose perfect gadget',
             delay: 300,
-            image: '/assets/blogs/blog-2.jpg',
+            image: './assets/blogs/blog-2.jpg',
             date: '25 May, 2022 by Jane Doe',
             author: ' by Jane Doe',
             content: 'Nullam ultricies massa in dui posuere, sed blandit neque lobortis. Sed sed justo vel odio pretium finibus.'
@@ -25,7 +25,7 @@ const Blogs = () => {
             id: 3,
             title: 'How to choose perfect VR headset',
             delay: 400,
-            image: '/assets/blogs/blog-3.jpg',
+            image: './assets/blogs/blog-3.jpg',
             date: '30 May, 2022 by Michael Doe',
             author: ' by Michael Doe',
             content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec condimentum.'
